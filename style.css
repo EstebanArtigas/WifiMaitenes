@@ -5,27 +5,38 @@
     height: 100vh;
 }
 
+.todo {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-top: -150px;
+    margin-bottom: 15px;
+}
+
 .titulo {
-    color: white !important;
+    color: rgb(255, 255, 255) !important;
     text-align: center;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+    margin-top: 100px;
 }
 
 .subtitulo {
-    color: rgb(204, 204, 204) !important;
+    color: rgb(255, 255, 255) !important;
     text-align: center;
-    margin-top: 70px;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+    margin-top: 200px;
 }
 
 .btn {
-    display: flex;
-    flex-flow: wrap column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 .btn_face {
@@ -59,9 +70,11 @@
     border-radius: 6px;
     border-style: none;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    margin-top: 70px;
+    margin-top: 60px;
 }
 
+
+/*
 .btn_pagi {
     background-color: #02a89e !important;
     color: white;
@@ -78,8 +91,13 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin-top: 70px;
 }
+*/
 
 @media screen and (max-width: 975px) {
+    .logo {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
     .titulo {
         font-size: 24px;
         margin-top: 24px;
@@ -102,15 +120,15 @@
         width: 250px;
         height: 60px;
     }
-    .btn_pagi {
+    /* .btn_pagi {
         font-size: 24px;
         line-height: 24px;
         width: 250px;
         height: 60px;
-    }
+    }*/
 }
 
-@media screen and (max-width: 411px) {
+@media screen and (max-width: 414px) {
     .titulo {
         font-size: 20px;
         margin-top: 24px;
@@ -119,7 +137,7 @@
         font-size: 14px;
     }
     .btn {
-        margin-top: 10px;
+        margin-top: 100px;
     }
     .btn_face {
         font-size: 24px;
@@ -132,12 +150,12 @@
         height: 60px;
         width: 250px;
     }
-    .pagi {
+    /* .pagi {
         font-size: 24px;
         line-height: 24px;
         height: 60px;
         width: 250px;
-    }
+    }*/
 }
 
 @media screen and (max-width: 375px) {
@@ -166,12 +184,12 @@
         width: 200px;
         height: 55px;
     }
-    .btn_pagi {
+    /*  .btn_pagi {
         font-size: 22px;
         line-height: 24px;
         width: 200px;
         height: 55px;
-    }
+    }*/
 }
 
 @media screen and (max-width: 320px) {
@@ -197,10 +215,10 @@
         width: 200px;
         height: 50px;
     }
-    .btn_pagi {
+    /* .btn_pagi {
         font-size: 20px;
         line-height: 24px;
         width: 200px;
         height: 50px;
-    }
+    }*/
 }
